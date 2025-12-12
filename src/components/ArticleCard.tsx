@@ -66,13 +66,13 @@ const ArticleCard: React.FC<Props> = ({
   if (isImageColumn) {
     return (
       <div
-        className={`w-full h-full 2xl:max-h-50 gap-8 bg-white dark:text-white dark:bg-[#090D1F] transition ${className}`}
+        className={`w-full h-full gap-8 bg-white dark:text-white dark:bg-[#090D1F] transition ${className}`}
       >
         {article.imageUrl && (
           <img
             src={article.imageUrl}
             alt={titleText}
-            className="w-full h-full md:min-w-[320px] md:w-[40vw] 2xl:h-full object-cover"
+            className="w-full h-full md:min-w-[320px] md:w-[40vw] object-cover"
           />
         )}
         <div className="flex flex-col w-full h-full pb-0 justify-between dark:text-white dark:bg-[#090D1F] hover:shadow-lg transition p-4">
@@ -107,7 +107,7 @@ const ArticleCard: React.FC<Props> = ({
   // DEFAULT CARD
   return (
     <Row
-      className={`flex flex-col gap-8 h-full 2xl:max-h-108 justify-between bg-white dark:text-white dark:bg-[#090D1F] hover:shadow-lg transition ${className}`}
+      className={`flex flex-col gap-8 h-full justify-between bg-white dark:text-white dark:bg-[#090D1F] hover:shadow-lg transition ${className}`}
     >
       {article.imageUrl && (
         <img

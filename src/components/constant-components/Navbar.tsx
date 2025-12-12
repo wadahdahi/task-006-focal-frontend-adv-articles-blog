@@ -28,11 +28,11 @@ const Navbar: React.FC<NavbarProps> = ({
               className={({ isActive }) =>
                 isSidebar
                   ? isActive
-                    ? "sidebar-link-active"
-                    : "sidebar-link"
+                    ? "border-b-2 border-amber-100 font-semibold"
+                    : "border-b-2 border-transparent"
                   : isActive
-                  ? "nav-is-active"
-                  : "nav-list-item"
+                  ? "border-b-2 border-amber-100 font-semibold"
+                  : "border-b-2 border-transparent"
               }
               onClick={onLinkClick}
             >

@@ -36,7 +36,7 @@ const Header: React.FC<HeaderProps> = ({ id, logo }) => {
     { name: "Blog", path: "/" },
     { name: "Projects", path: "/projects-page" },
     { name: "About", path: "/about-page" },
-    { name: "Newsletter", path: "/news-letter-page" },
+    { name: "Newsletter", path: "/newsletter-page" },
   ];
 
   return (

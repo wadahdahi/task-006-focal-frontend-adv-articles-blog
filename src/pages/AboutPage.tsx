@@ -1,8 +1,8 @@
-const ProjectsPage = () => {
+const AboutPage = () => {
   return (
     <div>
       <h1 className="block text-4xl text-[#1A1A1A] dark:text-[#ffffff] mb-8">
-        Projects Page
+        About Page
       </h1>
       <p className="block text-4xl text-[#1A1A1A] dark:text-[#ffffff]">
         This Page Is Under Maintenance
@@ -11,4 +11,4 @@ const ProjectsPage = () => {
   );
 };
 
-export default ProjectsPage;
+export default AboutPage;

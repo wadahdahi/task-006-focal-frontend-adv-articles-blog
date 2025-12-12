@@ -16,7 +16,7 @@ const NewsLetterSection = () => {
         Stories and interviews
       </h2>
 
-      <p className="block sm:text-center text-[20px] font-normal leading-7.5 text-[#667085] dark:text-[#C0C5D0] mb-10 text-start">
+      <p className="block md:text-center text-[20px] font-normal leading-7.5 text-[#667085] dark:text-[#C0C5D0] mb-10 text-start ">
         Subscribe to learn about new product features, the latest in technology,
         solutions, and updates.
       </p>
@@ -26,19 +26,19 @@ const NewsLetterSection = () => {
           <input
             type="email"
             placeholder="Enter your email"
-            className="w-90 h-12 px-4 py-3 flex-1 border rounded bg-white dark:border-gray-50 rounded-xl:text-base outline-none"
+            className="w-full h-12 px-4 py-3 flex-1 border rounded bg-white dark:border-gray-50 rounded-xl:text-base outline-none"
           />
 
           <button
             type="button"
-            className="px-5 py-3 rounded-lg bg-[#7F56D9] text-base font-semibold"
+            className="cursor-pointer text-[#ffffff] px-5 py-3 rounded-lg bg-[#7F56D9] text-base font-semibold"
           >
             Subscribe
           </button>
         </form>
 
-        <p className="block text-[14px] text-[#667085] dark:text-[#C0C5D0] leading-5">
-          We care about your data in our privacy policy
+        <p className="block cursor-pointer text-[14px] text-[#667085] dark:text-[#C0C5D0] leading-5">
+          We care about your data in our <u>privacy policy</u>
         </p>
       </div>
     </section>

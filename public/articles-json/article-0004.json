@@ -4,7 +4,6 @@
     "text": "Grid system for better Design User Interface",
     "style": "bold"
   },
-  "mainImage": "path/to/main-image.jpg",
   "content": [
     {
       "type": "paragraph",
@@ -35,7 +34,7 @@
     },
     {
       "type": "image",
-      "src": "public/images/articles/article-0004/image-0001.png"
+      "src": "/public/images/articles/article-0004/image-0001.png"
     },
     {
       "type": "paragraph",
@@ -120,7 +119,7 @@
     },
     {
       "type": "image",
-      "src": "path/to/image2.jpg"
+      "src": "/public/images/articles/article-0004/Image-0002.png"
     },
     {
       "type": "paragraph",
@@ -130,10 +129,6 @@
           "style": "none"
         }
       ]
-    },
-    {
-      "type": "image",
-      "src": "/public/images/articles/article-0004/Image-0002.png"
     },
     {
       "type": "paragraph",
