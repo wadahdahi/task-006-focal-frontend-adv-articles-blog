@@ -119,7 +119,7 @@
     },
     {
       "type": "image",
-      "src": "/images/articles/article-0004/Image-0002.png"
+      "src": "/images/articles/article-0004/image-0002.png"
     },
     {
       "type": "paragraph",
@@ -303,7 +303,7 @@
       "type": "paragraph",
       "content": [
         {
-          "text": "• Designers can quickly put together well-aligned interfaces.\n• Users can easily scan predictable grid-based interfaces.",
+          "text": "• Designers can quickly put together well-aligned interfaces.",
           "style": "none"
         }
       ]
