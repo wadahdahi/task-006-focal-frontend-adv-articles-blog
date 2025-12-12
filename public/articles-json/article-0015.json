@@ -1,0 +1,9 @@
+{
+  "id": 15,
+  "title": "State Management in Modern Web Applications",
+  "content": "State management is a crucial aspect of modern web development, especially as applications grow in complexity. Effective state management ensures that data flows smoothly between components, leading to a more responsive and user-friendly experience. In this article, we will explore various state management techniques and libraries, such as Redux, MobX, and the Context API in React. We will discuss their pros and cons, use cases, and best practices for implementing state management in your web applications.",
+  "author": "Olivia Brown",
+  "publishedAt": "2023-09-30",
+  "imageUrl": "/public/images/articles/article-003.jpg",
+  "category": ["design", "research"]
+}

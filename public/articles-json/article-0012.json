@@ -1,0 +1,9 @@
+{
+  "id": 12,
+  "title": "Understanding React's useState Hook",
+  "content": "useState is a Hook that allows you to have state variables in functional components. You pass the initial state to this function and it returns a variable with the current state value and another function to update this value.",
+  "author": "Liam Johnson",
+  "publishedAt": "2023-09-30",
+  "imageUrl": "/public/images/articles/article-003.jpg",
+  "category": ["design", "research"]
+}

@@ -1,0 +1,9 @@
+{
+  "id": 13,
+  "title": "useEffect and the component lifecycle",
+  "content": "useEffect is a Hook that lets you perform side effects in function components. It serves the same purpose as componentDidMount, componentDidUpdate, and componentWillUnmount in React classes, but unified into a single API.",
+  "author": "Emma Williams",
+  "publishedAt": "2023-09-30",
+  "imageUrl": "/public/images/articles/article-003.jpg",
+  "category": ["design", "research"]
+}

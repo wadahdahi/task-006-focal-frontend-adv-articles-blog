@@ -1,0 +1,9 @@
+{
+  "id": 17,
+  "title": "React Components: Building Reusable UI Elements",
+  "content": "One of the most powerful features of React is its ability to create reusable components. Components allow developers to break down complex UIs into smaller, manageable pieces that can be reused throughout an application. This not only promotes code reusability but also enhances maintainability and scalability. In this article, we will explore the concept of reusable components in React, discuss best practices for creating them, and provide examples of how to implement them effectively in your projects.",
+  "author": "Michael Smith",
+  "publishedAt": "2023-09-30",
+  "imageUrl": "/public/images/articles/article-003.jpg",
+  "category": ["development", "react"]
+}

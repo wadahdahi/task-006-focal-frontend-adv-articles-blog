@@ -1,0 +1,9 @@
+{
+  "id": 20,
+  "title": "Clean Code Principles for Developers",
+  "content": "Clean code is essential for maintaining and scaling software projects. It enhances readability, reduces bugs, and facilitates collaboration among developers. This article delves into the principles of clean code, including meaningful naming conventions, modular design, and effective commenting. We will also explore various techniques for refactoring existing codebases to improve their structure and maintainability. By adopting clean code practices, developers can create robust applications that stand the test of time.",
+  "author": "Emily Johnson",
+  "publishedAt": "2023-09-30",
+  "imageUrl": "/public/images/articles/article-003.jpg",
+  "category": ["code", "best-practices", "development"]
+}

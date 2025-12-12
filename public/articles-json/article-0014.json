@@ -1,0 +1,9 @@
+{
+  "id": 14,
+  "title": "APIs 101: A Beginner's Guide",
+  "content": "APIs (Application Programming Interfaces) are essential tools that allow different software applications to communicate with each other. They define the methods and data formats that applications can use to request and exchange information. In this beginner's guide, we will explore the basics of APIs, including their types, how they work, and common use cases. We will also discuss RESTful APIs, which are widely used in web development, and provide examples of how to interact with APIs using popular programming languages.",
+  "author": "Noah Davis",
+  "publishedAt": "2023-09-30",
+  "imageUrl": "/public/images/articles/article-003.jpg",
+  "category": ["design", "research"]
+}

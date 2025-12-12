@@ -1,0 +1,9 @@
+{
+  "id": 3,
+  "title": "Building your API Stack",
+  "content": "The rise of RESTful APIs has been met by a rise in tools for creating, testing, and manag...",
+  "author": "Lana Steiner",
+  "publishedAt": "2023-09-30",
+  "imageUrl": "/public/images/articles/article-003.jpg",
+  "category": ["design", "research"]
+}

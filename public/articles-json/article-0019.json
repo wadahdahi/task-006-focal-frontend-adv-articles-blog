@@ -1,0 +1,9 @@
+{
+  "id": 19,
+  "title": "SOLID Principles in Software Development",
+  "content": "The SOLID principles are a set of five design principles that help developers create maintainable and scalable software. These principles include Single Responsibility, Open/Closed, Liskov Substitution, Interface Segregation, and Dependency Inversion. In this article, we will explore each of these principles in detail, providing examples and best practices for implementing them in your software development projects. By adhering to the SOLID principles, developers can improve code quality, reduce technical debt, and enhance collaboration within development teams.",
+  "author": "Daniel Lee",
+  "publishedAt": "2023-09-30",
+  "imageUrl": "/public/images/articles/article-003.jpg",
+  "category": ["design", "research"]
+}
