@@ -34,7 +34,7 @@
     },
     {
       "type": "image",
-      "src": "/public/images/articles/article-0004/image-0001.png"
+      "src": "/images/articles/article-0004/image-0001.png"
     },
     {
       "type": "paragraph",
@@ -119,7 +119,7 @@
     },
     {
       "type": "image",
-      "src": "/public/images/articles/article-0004/Image-0002.png"
+      "src": "/images/articles/article-0004/Image-0002.png"
     },
     {
       "type": "paragraph",
@@ -167,7 +167,7 @@
     },
     {
       "type": "image",
-      "src": "/public/images/articles/article-0004/image-0003.png"
+      "src": "/images/articles/article-0004/image-0003.png"
     },
     {
       "type": "paragraph",
@@ -203,7 +203,7 @@
     },
     {
       "type": "image",
-      "src": "/public/images/articles/article-0004/image-0004.png"
+      "src": "/images/articles/article-0004/image-0004.png"
     },
     {
       "type": "paragraph",
@@ -239,7 +239,7 @@
     },
     {
       "type": "image",
-      "src": "/public/images/articles/article-0004/image-0005.png"
+      "src": "/images/articles/article-0004/image-0005.png"
     },
     {
       "type": "paragraph",
@@ -270,7 +270,7 @@
     },
     {
       "type": "image",
-      "src": "/public/images/articles/article-0004/image-0006.png"
+      "src": "/images/articles/article-0004/image-0006.png"
     },
     {
       "type": "paragraph",
@@ -336,7 +336,7 @@
     },
     {
       "type": "image",
-      "src": "/public/images/articles/article-0004/image-0007.png"
+      "src": "/images/articles/article-0004/image-0007.png"
     },
     {
       "type": "paragraph",
@@ -396,7 +396,7 @@
     },
     {
       "type": "image",
-      "src": "/public/images/articles/article-0004/image-0008.png"
+      "src": "/images/articles/article-0004/image-0008.png"
     },
     {
       "type": "paragraph",
@@ -413,7 +413,7 @@
     },
     {
       "type": "image",
-      "src": "/public/images/articles/article-0004/image-0009.png"
+      "src": "/images/articles/article-0004/image-0009.png"
     },
     {
       "type": "paragraph",
@@ -455,6 +455,6 @@
   ],
   "author": "Olivia Rhye",
   "publishedAt": "2023-10-02",
-  "imageUrl": "/public/images/articles/article-004.jpg",
+  "imageUrl": "/images/articles/article-004.jpg",
   "category": ["design", "research", "presentation"]
 }
