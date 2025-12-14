@@ -10,11 +10,11 @@ const App: React.FC = () => {
   return (
     <Provider store={store}>
       <div className="min-h-screen">
-        <Header logo="/images/logo/w-design-logo.png" />
+        <Header logo="/images/logo/w-design-logo.webp" />
         <main>
           <Outlet />
         </main>
-        <Footer logo="/images/logo/w-design-logo.png" />
+        <Footer logo="/images/logo/w-design-logo.webp" />
       </div>
     </Provider>
   );
