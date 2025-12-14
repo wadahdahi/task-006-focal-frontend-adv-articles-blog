@@ -17,7 +17,7 @@ export const fetchArticle = createAsyncThunk(
 export const fetchAllArticles = createAsyncThunk(
   "articles/fetchAllArticles",
   async () => {
-    const totalArticles = 20;
+    const totalArticles = 6;
     const promises = Array.from({ length: totalArticles }, (_, i) => {
       const indexStr = (i + 1).toString().padStart(4, "0");
       return fetch(`/articles-json/article-${indexStr}.json`).then((res) => {

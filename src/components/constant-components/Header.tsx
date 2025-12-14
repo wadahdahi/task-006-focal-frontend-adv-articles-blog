@@ -54,7 +54,8 @@ const Header: React.FC<HeaderProps> = ({ id, logo }) => {
             className="rounded-full"
             src={logo}
             alt="وااو ديزاين"
-            width={60}
+            width="60px"
+            height="60px"
           />
         </div>
 

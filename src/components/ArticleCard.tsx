@@ -5,6 +5,23 @@ import { getRandomColorPair } from "../utils/colors";
 import type { ColorPair } from "../utils/colors";
 import { useNavigate } from "react-router";
 
+// TYPE DEFINITION FOR CONTENT BLOCKS
+type ParagraphPart = {
+  text: string;
+  style?: string;
+};
+
+type ContentBlock =
+  | {
+      type: "paragraph";
+      text?: string;
+      content?: ParagraphPart[];
+    }
+  | {
+      type: "image";
+      src: string;
+    };
+
 // TYPE DEFINITION FOR PROPS
 interface Props extends ImportedProps {
   className?: string;
@@ -46,16 +63,39 @@ const ArticleCard: React.FC<Props> = ({
     });
   };
 
-  // GET FIRST PARAGRAPH TEXT SAFELY
-  const firstParagraphText = useMemo(() => {
+  // GET FIRST PARAGRAPH TEXT SAFELY (FINAL FIX – NO ANY – NO MEMO)
+  const getFirstParagraphText = () => {
     if (!article.content) return "";
-    if (typeof article.content === "string")
-      return article.content.slice(0, 100);
-    const firstParagraph = article.content.find(
-      (block) => block.type === "paragraph" && block.text
-    );
-    return firstParagraph?.text?.slice(0, 100) ?? "";
-  }, [article.content]);
+
+    if (typeof article.content === "string") {
+      return article.content.slice(0, 120);
+    }
+
+    const blocks = article.content as ContentBlock[];
+
+    for (const block of blocks) {
+      if (block.type !== "paragraph") continue;
+
+      if (typeof block.text === "string" && block.text.trim()) {
+        return block.text.slice(0, 120);
+      }
+
+      if (Array.isArray(block.content)) {
+        const combinedText = block.content
+          .map((part) => part.text)
+          .join("")
+          .trim();
+
+        if (combinedText) {
+          return combinedText.slice(0, 120);
+        }
+      }
+    }
+
+    return "";
+  };
+
+  const firstParagraphText = getFirstParagraphText();
 
   const titleText =
     typeof article.title === "string"
@@ -90,21 +130,23 @@ const ArticleCard: React.FC<Props> = ({
               <img
                 alt=""
                 src="/icons/arrow-01-dark-for-light.png"
-                className="cursor-pointer dark:hidden"
+                className="w-2.5 h-2.5 cursor-pointer dark:hidden"
                 onClick={() => navigate(`/blog/${article.id}`)}
               />
               <img
                 alt=""
                 src="/icons/arrow-01-light-for-dark.png"
-                className="cursor-pointer hidden dark:block"
+                className="w-2.5 h-2.5 cursor-pointer hidden dark:block"
                 onClick={() => navigate(`/blog/${article.id}`)}
               />
             </Col>
           </Row>
 
-          <p className="block w-full xl:h-18 text-[16px] text-sm text-[#66856b]">
-            {firstParagraphText}...
-          </p>
+          {firstParagraphText && (
+            <p className="block w-full xl:h-18 text-[16px] text-sm text-[#66856b]">
+              {firstParagraphText}...
+            </p>
+          )}
 
           <Row className="flex flex-wrap gap-1 font-medium">
             {renderCategories()}
@@ -127,7 +169,7 @@ const ArticleCard: React.FC<Props> = ({
         />
       )}
 
-      <div className="flex flex-col w-full h-full max-h-full justify-between">
+      <div className="flex flex-col w-full h-full justify-between">
         <Row>
           <p className="block text-sm text-[#6941C6] mb-2 font-semibold capitalize">
             {article.author} -{" "}
@@ -143,21 +185,23 @@ const ArticleCard: React.FC<Props> = ({
             <img
               alt=""
               src="/icons/arrow-01-dark-for-light.png"
-              className="cursor-pointer dark:hidden"
+              className="w-2.5 h-2.5 cursor-pointer dark:hidden"
               onClick={() => navigate(`/blog/${article.id}`)}
             />
             <img
               alt=""
               src="/icons/arrow-01-light-for-dark.png"
-              className="cursor-pointer hidden dark:block"
+              className="w-2.5 h-2.5 cursor-pointer hidden dark:block"
               onClick={() => navigate(`/blog/${article.id}`)}
             />
           </Col>
         </Row>
 
-        <Row>
-          <p className="block mt-2 text-sm">{firstParagraphText}...</p>
-        </Row>
+        {firstParagraphText && (
+          <Row>
+            <p className="block mt-2 text-sm">{firstParagraphText}...</p>
+          </Row>
+        )}
 
         <Row className="mb-2 flex flex-wrap gap-1 font-medium">
           {renderCategories()}

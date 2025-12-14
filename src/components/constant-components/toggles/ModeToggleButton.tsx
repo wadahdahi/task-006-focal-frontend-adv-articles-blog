@@ -18,7 +18,7 @@ function ThemeIcon({
   theme: "light" | "dark";
   type: "main" | "knob";
 }) {
-  return <img src={icons[theme][type]} alt="" width={20} height={20} />;
+  return <img src={icons[theme][type]} alt="" className="w-5 h-5" />;
 }
 
 export default function ModeToggleButton() {
