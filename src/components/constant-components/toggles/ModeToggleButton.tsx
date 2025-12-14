@@ -1,5 +1,26 @@
 import { useState, useEffect } from "react";
 
+const icons = {
+  light: {
+    main: "/icons/toggle-sun-light.png",
+    knob: "/icons/toggle-circle-light.png",
+  },
+  dark: {
+    main: "/icons/toggle-moon-dark.png",
+    knob: "/icons/toggle-circle-dark.png",
+  },
+};
+
+function ThemeIcon({
+  theme,
+  type,
+}: {
+  theme: "light" | "dark";
+  type: "main" | "knob";
+}) {
+  return <img src={icons[theme][type]} alt="" width={20} height={20} />;
+}
+
 export default function ModeToggleButton() {
   const [isLight, setIsLight] = useState(() => {
     const stored = localStorage.getItem("theme");
@@ -17,6 +38,17 @@ export default function ModeToggleButton() {
     }
   }, [isLight]);
 
+  useEffect(() => {
+    Object.values(icons).forEach((set) =>
+      Object.values(set).forEach((src) => {
+        const img = new Image();
+        img.src = src;
+      })
+    );
+  }, []);
+
+  const theme = isLight ? "light" : "dark";
+
   return (
     <div
       onClick={() => setIsLight(!isLight)}
@@ -24,26 +56,8 @@ export default function ModeToggleButton() {
         isLight ? "bg-black" : "bg-white"
       }`}
     >
-      <img
-        src={
-          isLight
-            ? "/icons/toggle-sun-light.png"
-            : "/icons/toggle-moon-dark.png"
-        }
-        width={20}
-        height={20}
-        alt="theme-icon"
-      />
-      <img
-        src={
-          isLight
-            ? "/icons/toggle-circle-light.png"
-            : "/icons/toggle-circle-dark.png"
-        }
-        width={20}
-        height={20}
-        alt="theme-circle"
-      />
+      <ThemeIcon theme={theme} type="main" />
+      <ThemeIcon theme={theme} type="knob" />
     </div>
   );
 }

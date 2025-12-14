@@ -75,27 +75,37 @@ const ArticleCard: React.FC<Props> = ({
             className="w-full h-full md:min-w-[320px] md:w-[40vw] object-cover"
           />
         )}
+
         <div className="flex flex-col w-full h-full pb-0 justify-between dark:text-white dark:bg-[#090D1F] hover:shadow-lg transition p-4">
           <p className="block text-sm text-[#6941C6] font-semibold capitalize">
             {article.author} -{" "}
             {new Date(article.publishedAt).toLocaleDateString()}
           </p>
+
           <Row className="flex flex-row justify-between items-center">
             <Col>
               <h3 className="block font-bold text-[18px]">{titleText}</h3>
             </Col>
-            <Col>
+            <Col className="flex justify-end">
               <img
-                src="/icons/arrow.png"
                 alt=""
+                src="/icons/arrow-01-dark-for-light.png"
+                className="cursor-pointer dark:hidden"
                 onClick={() => navigate(`/blog/${article.id}`)}
-                className="cursor-pointer"
+              />
+              <img
+                alt=""
+                src="/icons/arrow-01-light-for-dark.png"
+                className="cursor-pointer hidden dark:block"
+                onClick={() => navigate(`/blog/${article.id}`)}
               />
             </Col>
           </Row>
+
           <p className="block w-full xl:h-18 text-[16px] text-sm text-[#66856b]">
             {firstParagraphText}...
           </p>
+
           <Row className="flex flex-wrap gap-1 font-medium">
             {renderCategories()}
           </Row>
@@ -116,6 +126,7 @@ const ArticleCard: React.FC<Props> = ({
           className="w-full h-full max-h-[468.667px] md:max-h-57 xl:min-h-57 xl:max-h-61.5 object-cover"
         />
       )}
+
       <div className="flex flex-col w-full h-full max-h-full justify-between">
         <Row>
           <p className="block text-sm text-[#6941C6] mb-2 font-semibold capitalize">
@@ -123,22 +134,31 @@ const ArticleCard: React.FC<Props> = ({
             {new Date(article.publishedAt).toLocaleDateString()}
           </p>
         </Row>
+
         <Row className="flex justify-between items-center">
           <Col>
             <h3 className="font-bold text-lg">{titleText}</h3>
           </Col>
-          <Col>
+          <Col className="flex justify-end">
             <img
-              src="/icons/arrow.png"
               alt=""
+              src="/icons/arrow-01-dark-for-light.png"
+              className="cursor-pointer dark:hidden"
               onClick={() => navigate(`/blog/${article.id}`)}
-              className="cursor-pointer"
+            />
+            <img
+              alt=""
+              src="/icons/arrow-01-light-for-dark.png"
+              className="cursor-pointer hidden dark:block"
+              onClick={() => navigate(`/blog/${article.id}`)}
             />
           </Col>
         </Row>
+
         <Row>
           <p className="block mt-2 text-sm">{firstParagraphText}...</p>
         </Row>
+
         <Row className="mb-2 flex flex-wrap gap-1 font-medium">
           {renderCategories()}
         </Row>

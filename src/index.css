@@ -5,7 +5,8 @@
 
 @layer base {
   html {
-    font-family: "Inter", "Montserrat", sans-serif;
+    font-family: "Inter";
+    /* font-family: "Inter", "Montserrat", sans-serif; */
   }
 
   body {

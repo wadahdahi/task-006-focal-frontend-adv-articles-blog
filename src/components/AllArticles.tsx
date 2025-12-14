@@ -38,7 +38,7 @@ const AllArticles: React.FC<AllArticlesProps> = ({ isVertical }) => {
   if (status === "failed") return <div>Failed to load articles.</div>;
 
   return (
-    <section>
+    <section className="flex flex-col w-full h-full">
       <h2 className="text-2xl font-semibold mb-4">All Articles</h2>
       <div
         className={
