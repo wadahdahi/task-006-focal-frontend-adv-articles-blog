@@ -9,8 +9,8 @@ const Footer: React.FC<HeaderProps> = ({ logo }) => {
         <img
           src={logo}
           alt="وااو ديزاين"
-          width={"50.33px"}
-          height="29.72px"
+          width="105"
+          height="105"
           className="block rounded-full mb-7.5 sm:mb-1"
         />
 
