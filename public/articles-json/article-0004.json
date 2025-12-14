@@ -34,7 +34,7 @@
     },
     {
       "type": "image",
-      "src": "/images/articles/article-0004/image-0001.png"
+      "src": "/images/articles/article-0004/image-0001.webp"
     },
     {
       "type": "paragraph",
@@ -119,7 +119,7 @@
     },
     {
       "type": "image",
-      "src": "/images/articles/article-0004/image-0002.png"
+      "src": "/images/articles/article-0004/image-0002.webp"
     },
     {
       "type": "paragraph",
@@ -167,7 +167,7 @@
     },
     {
       "type": "image",
-      "src": "/images/articles/article-0004/image-0003.png"
+      "src": "/images/articles/article-0004/image-0003.webp"
     },
     {
       "type": "paragraph",
@@ -203,7 +203,7 @@
     },
     {
       "type": "image",
-      "src": "/images/articles/article-0004/image-0004.png"
+      "src": "/images/articles/article-0004/image-0004.webp"
     },
     {
       "type": "paragraph",
@@ -239,7 +239,7 @@
     },
     {
       "type": "image",
-      "src": "/images/articles/article-0004/image-0005.png"
+      "src": "/images/articles/article-0004/image-0005.webp"
     },
     {
       "type": "paragraph",
@@ -270,7 +270,7 @@
     },
     {
       "type": "image",
-      "src": "/images/articles/article-0004/image-0006.png"
+      "src": "/images/articles/article-0004/image-0006.webp"
     },
     {
       "type": "paragraph",
@@ -336,7 +336,7 @@
     },
     {
       "type": "image",
-      "src": "/images/articles/article-0004/image-0007.png"
+      "src": "/images/articles/article-0004/image-0007.webp"
     },
     {
       "type": "paragraph",
@@ -396,7 +396,7 @@
     },
     {
       "type": "image",
-      "src": "/images/articles/article-0004/image-0008.png"
+      "src": "/images/articles/article-0004/image-0008.webp"
     },
     {
       "type": "paragraph",
@@ -413,7 +413,7 @@
     },
     {
       "type": "image",
-      "src": "/images/articles/article-0004/image-0009.png"
+      "src": "/images/articles/article-0004/image-0009.webp"
     },
     {
       "type": "paragraph",
@@ -455,6 +455,6 @@
   ],
   "author": "Olivia Rhye",
   "publishedAt": "2023-10-02",
-  "imageUrl": "/images/articles/article-004.jpg",
+  "imageUrl": "/images/articles/article-004.webp",
   "category": ["design", "research", "presentation"]
 }

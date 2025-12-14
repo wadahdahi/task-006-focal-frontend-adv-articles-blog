@@ -4,6 +4,6 @@
   "content": "WebSockets provide a full-duplex communication channel over a single, long-lived connection, enabling real-time data transfer between clients and servers. This technology is essential for applications that require instant updates, such as chat applications, online gaming, and live data feeds. In this article, we will explore the fundamentals of WebSockets, how they differ from traditional HTTP requests, and practical use cases for implementing WebSockets in modern web applications.",
   "author": "James Anderson",
   "publishedAt": "2023-09-30",
-  "imageUrl": "/public/images/articles/article-003.jpg",
+  "imageUrl": "/public/images/articles/article-003.webp",
   "category": ["APIs", "WebSockets", "development"]
 }

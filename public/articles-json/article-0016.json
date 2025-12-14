@@ -4,6 +4,6 @@
   "content": "Web accessibility ensures that websites and applications are usable by people with various disabilities. This article covers the fundamental principles of web accessibility, including the importance of semantic HTML, keyboard navigation, and ARIA roles. We will also explore tools and techniques for testing accessibility and discuss best practices for creating inclusive digital experiences.",
   "author": "Sophia Martinez",
   "publishedAt": "2023-09-30",
-  "imageUrl": "/public/images/articles/article-003.jpg",
+  "imageUrl": "/public/images/articles/article-003.webp",
   "category": ["web-accessibility", "design", "development"]
 }
