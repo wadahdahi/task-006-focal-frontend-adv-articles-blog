@@ -40,6 +40,7 @@ const RecentArticles: React.FC<AllArticlesProps> = ({ isVertical }) => {
         ) : (
           // HOMEPAGE RENDER
           <>
+            {/* ARTICLE 1 */}
             <div className="flex flex-col xl:grid xl:grid-cols-2 gap-8">
               {recentArticles[3] && (
                 <ArticleCard
@@ -47,7 +48,7 @@ const RecentArticles: React.FC<AllArticlesProps> = ({ isVertical }) => {
                   className="flex flex-col w-full h-full justify-between"
                 />
               )}
-
+              {/* ARTICLE 2 + 3 */}
               <div className="flex flex-col w-full h-full gap-8 justify-between">
                 {[1, 2].map((i) =>
                   recentArticles[i] ? (
@@ -61,11 +62,11 @@ const RecentArticles: React.FC<AllArticlesProps> = ({ isVertical }) => {
                 )}
               </div>
             </div>
-
+            {/* ARTICLE 4 */}
             {recentArticles[0] && (
               <ArticleCard
                 article={recentArticles[0]}
-                className="flex flex-col w-full xl:flex-row justify-between"
+                className="flex flex-col w-full h-full xl:flex-row justify-between"
               />
             )}
           </>

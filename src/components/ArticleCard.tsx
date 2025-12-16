@@ -106,18 +106,20 @@ const ArticleCard: React.FC<Props> = ({
   if (isImageColumn) {
     return (
       <div
-        className={`w-full h-full gap-8 bg-white dark:text-white dark:bg-[#090D1F] transition ${className}`}
+        className={`w-full h-full bg-white dark:text-white dark:bg-[#090D1F] transition ${className}`}
       >
         {article.imageUrl && (
-          <img
-            src={article.imageUrl}
-            alt={titleText}
-            fetchPriority="high"
-            className="w-full h-full md:min-w-[320px] md:w-[40vw] object-cover"
-          />
+          <div className="overflow-hidden md:min-w-[320px] md:w-[40vw]">
+            <img
+              src={article.imageUrl}
+              alt={titleText}
+              fetchPriority="high"
+              className="w-full h-full object-cover"
+            />
+          </div>
         )}
 
-        <div className="flex flex-col w-full h-full pb-0 justify-between dark:text-white dark:bg-[#090D1F] hover:shadow-lg transition p-4">
+        <div className="flex flex-col w-full h-full bg-white pb-0 justify-between dark:text-white dark:bg-[#090D1F] hover:shadow-lg transition">
           <p className="block text-sm text-[#6941C6] font-semibold capitalize">
             {article.author} -{" "}
             {new Date(article.publishedAt).toLocaleDateString()}
@@ -144,7 +146,7 @@ const ArticleCard: React.FC<Props> = ({
           </Row>
 
           {firstParagraphText && (
-            <p className="block w-full xl:h-18 text-[16px] text-sm text-[#66856b]">
+            <p className="block w-full xl:h-18 mb-2 text-[16px] text-sm">
               {firstParagraphText}...
             </p>
           )}
@@ -160,18 +162,20 @@ const ArticleCard: React.FC<Props> = ({
   // DEFAULT CARD
   return (
     <Row
-      className={`flex flex-col gap-8 h-full justify-between bg-white dark:text-white dark:bg-[#090D1F] hover:shadow-lg transition ${className}`}
+      className={`flex flex-col gap-8 h-full justify-between dark:text-white dark:bg-[#090D1F] hover:shadow-lg transition ${className}`}
     >
       {article.imageUrl && (
-        <img
-          src={article.imageUrl}
-          alt={titleText}
-          fetchPriority="high"
-          className="w-full h-full max-h-[468.667px] md:max-h-57 xl:min-h-57 xl:max-h-61.5 object-cover"
-        />
+        <div className="overflow-hidden max-h-[468.667px] md:max-h-57 xl:min-h-57 xl:max-h-61.5">
+          <img
+            src={article.imageUrl}
+            alt={titleText}
+            fetchPriority="high"
+            className="w-full h-full object-cover"
+          />
+        </div>
       )}
 
-      <div className="flex flex-col w-full h-full justify-between">
+      <div className="flex flex-col w-full max-h-full bg-white justify-between">
         <Row>
           <p className="block text-sm text-[#6941C6] mb-2 font-semibold capitalize">
             {article.author} -{" "}
@@ -201,7 +205,9 @@ const ArticleCard: React.FC<Props> = ({
 
         {firstParagraphText && (
           <Row>
-            <p className="block mt-2 text-sm">{firstParagraphText}...</p>
+            <p className="block mt-2 text-[16px] mb-2 text-sm">
+              {firstParagraphText}...
+            </p>
           </Row>
         )}
 

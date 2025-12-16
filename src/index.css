@@ -30,22 +30,13 @@
     font-display: swap;
   }
 
-  html {
-    font-family: "Inter";
-  }
-
   body {
-    font-family: "Inter";
     text-rendering: optimizeLegibility;
     line-height: 1;
     font-weight: 400;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
-}
-
-body {
-  font-family: "Inter";
 }
 
 * {
