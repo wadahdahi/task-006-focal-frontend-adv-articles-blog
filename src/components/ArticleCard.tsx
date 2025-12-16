@@ -106,7 +106,7 @@ const ArticleCard: React.FC<Props> = ({
   if (isImageColumn) {
     return (
       <div
-        className={`w-full h-full bg-white dark:text-white dark:bg-[#090D1F] transition ${className}`}
+        className={`w-full h-full dark:text-white dark:bg-[#090D1F] transition ${className}`}
       >
         {article.imageUrl && (
           <div className="overflow-hidden md:min-w-[320px] md:w-[40vw]">
@@ -175,7 +175,7 @@ const ArticleCard: React.FC<Props> = ({
         </div>
       )}
 
-      <div className="flex flex-col w-full max-h-full bg-white justify-between">
+      <div className="flex flex-col w-full max-h-full justify-between">
         <Row>
           <p className="block text-sm text-[#6941C6] mb-2 font-semibold capitalize">
             {article.author} -{" "}
