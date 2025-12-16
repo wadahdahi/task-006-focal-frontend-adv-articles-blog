@@ -65,7 +65,7 @@ const RecentArticles: React.FC<AllArticlesProps> = ({ isVertical }) => {
             {recentArticles[0] && (
               <ArticleCard
                 article={recentArticles[0]}
-                className="flex flex-col w-full xl:flex-row"
+                className="flex flex-col w-full xl:flex-row justify-between"
               />
             )}
           </>

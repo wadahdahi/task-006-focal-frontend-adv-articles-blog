@@ -112,6 +112,7 @@ const ArticleCard: React.FC<Props> = ({
           <img
             src={article.imageUrl}
             alt={titleText}
+            fetchPriority="high"
             className="w-full h-full md:min-w-[320px] md:w-[40vw] object-cover"
           />
         )}
@@ -165,6 +166,7 @@ const ArticleCard: React.FC<Props> = ({
         <img
           src={article.imageUrl}
           alt={titleText}
+          fetchPriority="high"
           className="w-full h-full max-h-[468.667px] md:max-h-57 xl:min-h-57 xl:max-h-61.5 object-cover"
         />
       )}
