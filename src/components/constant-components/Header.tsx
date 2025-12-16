@@ -51,7 +51,7 @@ const Header: React.FC<HeaderProps> = ({ id, logo }) => {
       >
         <div className="flex items-center">
           <img
-            className="rounded-full"
+            className="rounded-full bg-gray-100 border border-[#ffc98280] shadow-md shadow-gray-100"
             src={logo}
             alt="وااو ديزاين"
             width="60px"
